@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建对象的三种方式 - 方式3</title>
+
+    <script>
+        function Student(name, sex, age, grade, class1, hobby){
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
+            this.grade = grade;
+            this.class1 = class1;
+            this.hobby = hobby;
+            this.study = function(){
+                    console.log("很懒，但成绩很好，你说气人不气人");
+                };
+            this.play = function(){
+                    console.log("忍者捉迷藏");
+                };
+        }
+
+        var student = new Student("卡卡西","男",32,"三年级","1班","小说, 忍术");
+        console.log(student.name);
+        student.play();
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
